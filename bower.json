@@ -6,11 +6,12 @@
   "dependencies": {
     "bootstrap": "~3.3.6",
     "jquery": "~2.1.4",
-    "highcharts": "~4.2.0"
+    "moment": "~2.11.1"
   },
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "vendor"
+    "public/vendor",
+    "node_modules"
   ]
 }

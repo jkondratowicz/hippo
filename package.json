@@ -1,0 +1,14 @@
+{
+  "name": "hippo",
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "express": "~4.13.1",
+    "ejs": "~2.3.3"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "jan@kondratowicz.pl",
+  "license": "MIT"
+}
