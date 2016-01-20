@@ -21,14 +21,25 @@
 
 	<body>
 		<div class="spinner"></div>
-		<div class="header">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-				<h1>Tramwaje w Warszawie <button class="btn btn-primary btn-fetch">pobierz dane</button></h1>
-				<p>
-					Źródło danych: <a href="https://api.um.warszawa.pl/">Miasto Stołeczne Warszawa</a>
-				</p>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a href="/" class="navbar-brand">Tramwaje w Warszawie</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<button class="btn btn-primary btn-fetch navbar-btn">odśwież</button>
+					<p class="navbar-text navbar-right">
+						Źródło danych: <a href="https://api.um.warszawa.pl/">Miasto Stołeczne Warszawa</a>
+					</p>
+				</div>
 			</div>
-		</div>
+		</nav>
 		<div class="content">
 		</div>
 

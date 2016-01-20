@@ -59,11 +59,15 @@ $(function() {
 			}
 		});
 	});
+
 	
 	map = new google.maps.Map($(".content")[0], {
 		center: {
 			lat: 52.2222655, lng: 21.0135581
 		},
-		zoom: 13
+		zoom: 13,
+		disableDefaultUI: true
 	});
+
+	$(".btn-fetch").click();
 });
