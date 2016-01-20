@@ -87,5 +87,19 @@ $(function() {
 		disableDefaultUI: true
 	});
 
+	if(navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+			var pos = {
+				lat: position.coords.latitude,
+				lng: position.coords.longitude
+			};
+
+			map.setCenter(pos);
+			map.setZoom(15);
+		}, function() {
+			
+		});
+	}
+
 	$(".btn-fetch").click();
 });
