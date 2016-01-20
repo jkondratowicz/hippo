@@ -20,7 +20,7 @@ html {
 }
 .spinner {
 	border: 8px solid #D95B43;
-	font-size: 50px;
+	font-size: 100px;
 	width: 1em;
 	height: 1em;
 	border-radius: .5em;
@@ -31,7 +31,12 @@ html {
 	-moz-animation: spin 1s linear infinite;
 	animation: spin 1s linear infinite;
 	border-top-color: #53777A;
-	margin: 10% auto;
+	position: absolute;
+	z-index: 990;
+	top: 50%;
+	left: 50%;
+	margin-left:-50px;
+	margin-top:-50px;
 }
 @-webkit-keyframes spin {
 	to {
