@@ -70,7 +70,7 @@ router.get('/data.json', function(req, res, next) {
 		},
 		function(done) {
 			// Save to cache
-			if(cached) {
+			if(cached || typeof result !== "object" || ! Array.isArray(result.result) || result.result.length === 0) {
 				return done();
 			}
 
