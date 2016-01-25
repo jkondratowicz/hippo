@@ -7,5 +7,6 @@ module.exports = {
 		host: "127.0.0.1",
 		pass: null,
 		options: {}
-	}
+	},
+	ga_ua: "ANALYTICS_CODE"
 };

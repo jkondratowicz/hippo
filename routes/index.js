@@ -17,10 +17,10 @@ if(config.redis.pass) {
 }
 
 var REDIS_KEY = "TramData";
-var REDIS_TTL = 30;
+var REDIS_TTL = 15;
 
 router.get('/', function(req, res, next) {
-	res.render('index', {apiKey: config.googleApiKey});
+	res.render('index', {apiKey: config.googleApiKey, ga_ua: config.ga_ua});
 });
 
 
